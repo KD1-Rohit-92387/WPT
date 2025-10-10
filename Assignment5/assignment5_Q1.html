@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let x,y,z;
+
+       x= parseInt(prompt("Enter first number"));
+       while(x<0){
+       x= prompt("Enter valid positive number:")
+       }
+       y= parseInt(prompt("Enter second number"));
+       while(y<0){
+       y= prompt("Enter valid positive number:")
+       }
+       z= parseInt(prompt("Enter third number"));
+       while(z<0){
+       z= prompt("Enter valid positive number:")
+       }
+       
+      
+
+       if (x>y && x>z){
+                 alert("x:"+x+",y:"+y+",z:"+z);
+             alert("Largest number is :"+x);
+       }
+      else if(y>x && y>z){
+         alert("x:"+x+",y:"+y+",z:"+z);
+          alert("Largest number is :" + y);
+      }
+      else alert("Largest number is : "+z )
+       
+       
+    </script>
+</body>
+</html>

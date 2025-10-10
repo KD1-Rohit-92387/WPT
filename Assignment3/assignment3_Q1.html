@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .main-container {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .block {
+            height: 100%;
+        }
+
+        /* Styles for Row 1 */
+        .row-1 .block-red {
+            background-color: red;
+            flex: 3;
+        }
+
+        .row-1 .block-blue {
+            background-color: blue;
+            flex: 1;
+        }
+
+        /* Styles for Row 2 */
+        .row-2 {
+            background-color: green;
+        }
+
+        .row-2 .block-blue {
+            background-color: blue;
+            width: 50px;
+            margin-left: auto;
+        }
+
+        /* Styles for Row 3 */
+        .row-3 .block-red {
+            background-color: red;
+            width: 30px;
+        }
+
+        .row-3 .block-green {
+            background-color: green;
+            flex: 1;
+        }
+
+        .row-3 .block-blue {
+            background-color: blue;
+            width: 30px;
+        }
+
+        /* Styles for Row 4 */
+        .row-4 .block-red {
+            background-color: red;
+            flex: 3;
+        }
+
+        .row-4 .block-green {
+            background-color: green;
+            flex: 1;
+        }
+
+        .row-4 .block-blue {
+            background-color: blue;
+            width: 30px;
+        }
+
+        /* Styles for Row 5 */
+        .row-5 {
+            background-color: green;
+            justify-content: center;
+        }
+
+        .row-5 .block-red {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+        }
+
+        /* Styles for Row 6 */
+        .row-6 .block-red {
+            background-color: red;
+            flex: 2;
+        }
+
+        .row-6 .block-blue {
+            background-color: blue;
+            width: 30px;
+            margin-right: auto;
+        }
+
+        .row-6 .block-green {
+            background-color: green;
+            flex: 1;
+        }
+
+        /* Styles for Row 7 */
+        .row-7 .block-red {
+            background-color: red;
+            width: 30px;
+        }
+
+        .row-7 .block-blue {
+            background-color: blue;
+            width: 30px;
+        }
+
+        .row-7 .block-green {
+            background-color: green;
+            flex: 1;
+        }
+
+        /* Styles for Row 8 */
+        .row-8 {
+            background-color: green;
+            justify-content: space-between;
+        }
+
+        .row-8 .block-orange {
+            background-color: orange;
+            width: 25px;
+        }
+
+        /* Styles for Row 9 */
+        .row-9 {
+            justify-content: space-around;
+        }
+
+        .row-9 .block-orange {
+            background-color: orange;
+            width: 50px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Title</h1>
+        <h2>Head</h2>
+        <h3>Body</h3>
+
+        <div class="row row-1">
+            <div class="block block-red">Row 1</div>
+            <div class="block block-blue"></div>
+        </div>
+
+        <div class="row row-2">
+            <div class="block block-blue"></div>
+        </div>
+
+        <h4>Student TODOS</h4>
+
+        <div class="row row-3">
+            <div class="block block-red">Row 3</div>
+            <div class="block block-green"></div>
+            <div class="block block-blue"></div>
+        </div>
+
+        <div class="row row-4">
+            <div class="block block-red">Row 4</div>
+            <div class="block block-green"></div>
+            <div class="block block-blue"></div>
+        </div>
+
+        <div class="row row-5">
+            <div class="block block-red">Row 5</div>
+        </div>
+
+        <div class="row row-6">
+            <div class="block block-red">Row 6</div>
+            <div class="block block-blue"></div>
+            <div class="block block-green"></div>
+        </div>
+
+        <div class="row row-7">
+            <div class="block block-red">Row 7</div>
+            <div class="block block-blue"></div>
+            <div class="block block-green"></div>
+        </div>
+
+        <div class="row row-8">
+            <div class="block block-orange">Row 8</div>
+            <div class="block block-orange"></div>
+            <div class="block block-orange"></div>
+            <div class="block block-orange"></div>
+        </div>
+
+        <div class="row row-9">
+            <div class="block block-orange">Row 9</div>
+            <div class="block block-orange"></div>
+            <div class="block block-orange"></div>
+        </div>
+    </div>
+</body>
+</html>
